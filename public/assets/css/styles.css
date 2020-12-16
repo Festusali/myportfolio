@@ -57,13 +57,18 @@ div#gallery {
   margin-top: 64px;
 }
 
+div#gallery > div {
+  width: 95%;
+  margin: 0 auto;
+}
+
 div#gallery h2 {
   font-size: 1.5rem;
   margin-bottom: 16px;
 }
 
 div#gallery img {
-  width: 192px;
+  max-width: 95%;
   margin: 0px 16px 32px 16px;
   border: 5px solid #ddd;
   box-shadow: 0px 0px 10px #eee; 
@@ -78,6 +83,16 @@ div#gallery img {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    max-width: 768px;
+    max-width: 720px;
+  }
+
+  div#gallery img {
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  div#gallery img {
+    max-width: 30%;
   }
 }
